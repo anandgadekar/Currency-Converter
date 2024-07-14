@@ -48,7 +48,7 @@ const updateExchangeRate = async () => {
     msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
   } catch (error) {
     console.error('Error fetching the exchange rate:', error);
-    msg.innerText = 'Failed to fetch exchange rate. Please try again later.';
+    msg.innerText = 'Something Went Wrong. Please try again later.';
   }
 };
 
